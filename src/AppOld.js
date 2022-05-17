@@ -1,21 +1,8 @@
 import './App.css';
+import NEWS from "./queries";
+import {useQuery} from "@apollo/client";
 
-import {gql, useQuery} from "@apollo/client";
-
-
-const NEWS = gql`
-  query news {
-  news {
-    id
-    title
-    author
-    views
-    publishDate
-  }
-}
-`;
-
-function App() {
+function AppOld() {
     return (
         <div className="App">
             <h2>All scrapped news</h2>
@@ -42,4 +29,4 @@ function News() {
     ));
 }
 
-export default App;
+export default AppOld;

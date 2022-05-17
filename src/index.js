@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './index.css';
-import App from './App';
+// import AppOld from './AppOld';
+import App from './AppTable';
 import {
     ApolloClient,
     InMemoryCache,
